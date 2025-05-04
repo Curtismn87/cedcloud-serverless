@@ -8,6 +8,9 @@ const count = ref(0)
 
 <template>
   <h1>{{ msg }}</h1>
+  <div class="p-10 bg-blue-500 text-white text-2xl">
+    ✅ Tailwind is working!
+  </div>
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
@@ -33,6 +36,7 @@ const count = ref(0)
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
 </template>
+
 
 <style scoped>
 .read-the-docs {
