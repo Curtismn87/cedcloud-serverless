@@ -1,5 +1,14 @@
-export const sampleVideos = [
-    {
+export interface Video {
+  videoId: string;
+  title: string;
+  channelTitle: string;
+  publishedAt: string;
+  thumbnail: {
+    url: string;
+  };
+}
+
+export const sampleVideos: Video[] = [    {
       videoId: "abc123",
       title: "MIT Lecture 1: Introduction to Computer Science",
       channelTitle: "MIT OpenCourseWare",
